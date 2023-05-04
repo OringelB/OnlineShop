@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.side-allPage {
+  min-height: 100vh;
+}
+
+.product img {
+  max-width: 400px;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px #404040 solid;
+  box-sizing: border-box;
+}
+
+main {
+  flex: 1;
+}
+
+.productDesc {
+  padding: 1rem;
+}
+
+.rating span {
+  color: #ffc000;
+}
+
+.btn-primary,
+.btn-outline-primary {
+  background-color: #f0c040;
+  color: #000000;
+  border-width: 0px;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background-color: #d3a62c;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 600px;
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+  box-shadow: none;
+  transform: scale(1);
+}
+
+.product-card:hover {
+  box-shadow: 10px 10px 10px #888888;
+  transform: scale(1.02);
+}
+
+.card-img-top {
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  height: 350px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.img-thumbnail {
+  height: 200px;
+}
+
+.small-container {
+  max-width: 600px;
+}
+
+.checkout-steps>div {
+  border-bottom: 0.2rem solid #a0a0a0;
+  color: #a0a0a0;
+}
+
+.checkout-steps>div.active {
+  border-bottom: 0.2rem solid #f08000;
+  color: #f08000;
+}
+
+.align-arrow-right {
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media screen and (max-width: 1024px) {
+  .align-arrow-right {
+    /* left: 120px;
+    top: calc(50% - 8px);
+    transform: none; */
+    visibility:collapse;
+  }
+}
+
+.highlight-current-page {
+  background-color: #f0c040 !important;
+  color: #000000 !important;
+}
