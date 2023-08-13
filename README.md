@@ -26,7 +26,7 @@
     <ol>
         <li>Clone the repository to your local machine:</li>
     </ol>
-    <pre><code>git clone https://github.com/your_username/e-shop.git
+    <pre><code>git clone https://github.com/OringelB/OnlineShop.git
     </code></pre>
     <ol start="2">
         <li>Change into the project directory:</li>
